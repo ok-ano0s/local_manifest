@@ -3,13 +3,11 @@
 
 	<remote name="main"
                 fetch="https://github.com/cArN4gEisDeD" />
-        <remote name="vendor"
-                fetch="https://github.com/realme-c2" />
         <remote name="dirac"
                 fetch="https://github.com/techyminati" />
 
         <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="main" revision="main" clone-depth="1" />
-        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="vendor" revision="eleven" clone-depth="1" />
+        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="main" revision="eleven" clone-depth="1" />
         <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="main" revision="lineage-18.1" clone-depth="1" />
         <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="dirac" revision="master" clone-depth="1" />
 
