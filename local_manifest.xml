@@ -3,17 +3,15 @@
 
 	<remote name="fork"
 		fetch="https://github.com/cArN4gEisDeD" />
-        <remote name="patch"
-                fetch="https://github.com/CipherOS" />
-	<remote name="dirac"
-                fetch="https://github.com/techyminati" />
+        <remote name="trees"
+                fetch="https://github.com/Realme-G70-Series" />
+	<remote name="sarthak"
+                fetch="https://github.com/sarthakroy2002" />
 
-        <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="fork" revision="sakura" clone-depth="1" />
-        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="fork" revision="eleven" clone-depth="1" />
-	<project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="fork" revision="lineage-18.1" clone-depth="1" />
-        <remove-project name="LineageOS/android_frameworks_opt_net_wifi" />
-        <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="patch" revision="eleven" clone-depth="1" />
-        <project path="vendor/ANXCamera" name="vendor_ANXCamera" remote="fork" revision="11" clone-depth="1" />
-	<project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="dirac" revision="master" clone-depth="1" />
+        <project path="device/realme/RMX2020" name="device_realme_RMX2020" remote="fork" revision="sakura" clone-depth="1" />
+        <project path="vendor/realme/RMX2020" name="vendor_realme_RMX2020" remote="trees" revision="11-rmui1" clone-depth="1" />
+	<project path="kernel/realme/RMX2020" name="kernel_realme_RMX2020" remote="sarthak" revision="Q" clone-depth="1" />
+        <project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="trees" revision="lineage-18.1" clone-depth="1" />
+        <project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="trees" revision="master" clone-depth="1" />
 
 </manifest>
