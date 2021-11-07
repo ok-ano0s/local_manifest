@@ -4,7 +4,7 @@
 	<remote name="main"
                 fetch="https://github.com/cArN4gEisDeD" />
 
-        <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="main" revision="sakura" clone-depth="1" />
-        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="main" revision="phh" clone-depth="1" />
+        <project path="device/realme/aqua" name="android_device_realme_aqua" remote="main" revision="cos-12" clone-depth="1" />
+        <project path="vendor/realme/aqua" name="android_vendor_realme_aqua" remote="main" revision="cos-11" clone-depth="1" />
 
 </manifest>
