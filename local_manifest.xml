@@ -3,9 +3,22 @@
 
 	<remote name="main"
                 fetch="https://github.com/cArN4gEisDeD" />
+	
+	<remote name="kernel"
+                fetch="https://github.com/P-Salik" />
+	
+	<remote name="parts"
+                fetch="https://github.com/Realme-G70-Series" />
+	
+	<remote name="sepolicy"
+                fetch="https://github.com/AOSP-12-RMX2020" />
 
-        <project path="device/realme/aqua" name="android_device_realme_aqua" remote="main" revision="cos-12" clone-depth="1" />
-        <project path="vendor/realme/aqua" name="android_vendor_realme_aqua" remote="main" revision="cos-11" clone-depth="1" />
-        <project path="vendor/realme/aqua-firmware" name="vendor_realme_aqua-firmware" remote="main" revision="master" clone-depth="1" />
+        <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="main" revision="twelve" clone-depth="1" />
+        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="main" revision="twelve" clone-depth="1" />
+        <project path="kernel/realme/RMX1941" name="android_kernel_realme_karashi" remote="kernel" revision="android-10.0" clone-depth="1" />
+	<project path="vendor/realme/RMX1941-ims" name="android_vendor_realme_RMX1941-ims" remote="main" revision="twelve" clone-depth="1" />
+	<project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="parts" revision="aosp12" clone-depth="1" />
+	<project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="parts" revision="lineage-19.0" clone-depth="1" />
+	<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="main" revision="twelve" clone-depth="1" />
 
 </manifest>
