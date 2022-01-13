@@ -20,7 +20,7 @@
 	<project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="parts" revision="aosp12" clone-depth="1" />
 	<project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="parts" revision="lineage-19.0" clone-depth="1" />
 	<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="sepolicy" revision="twelve" clone-depth="1" />
-        <remove-project name="frameworks/base" />
+        <remove-project name="android_frameworks_base" />
         <project path="frameworks/base" name="android_frameworks_base-1" remote="main" revision="twelve" clone-depth="1" />
 
 </manifest>
