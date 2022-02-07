@@ -28,8 +28,8 @@
         <!-- SEPolicy -->
 
         <remote name="sepolicy"
-                fetch="https://github.com/AOSP-12-RMX2020" />
+                fetch="https://github.com/ArrowOS" />
 
-	<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="sepolicy" revision="twelve" clone-depth="1" />
+	<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="sepolicy" revision="arrow-12.0" clone-depth="1" />
 
 </manifest>
