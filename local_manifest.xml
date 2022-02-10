@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="main"
-                fetch="https://github.com/cArN4gEisDeD" />
-	
-	<remote name="kernel"
-                fetch="https://github.com/P-Salik" />
-	
-	<remote name="parts"
-                fetch="https://github.com/Realme-G70-Series" />
-	
-	<remote name="sepolicy"
-                fetch="https://github.com/AOSP-12-RMX2020" />
+        <!-- Device trees -->
 
-        <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="main" revision="twelve" clone-depth="1" />
-        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="kernel" revision="twelve" clone-depth="1" />
-        <project path="kernel/realme/RMX1941" name="android_kernel_realme_karashi" remote="kernel" revision="android-10.0" clone-depth="1" />
-	<project path="vendor/realme/RMX1941-ims" name="android_vendor_realme_RMX1941-ims" remote="main" revision="twelve" clone-depth="1" />
-	<project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="parts" revision="aosp12" clone-depth="1" />
-	<project path="packages/apps/RealmeDirac" name="android_packages_apps_RealmeDirac" remote="parts" revision="lineage-19.0" clone-depth="1" />
-	<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="sepolicy" revision="twelve" clone-depth="1" />
-        <remove-project name="android_frameworks_base" />
+        <remote name="main"
+                fetch="https://github.com/cArN4gEisDeD" />
+
+        <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="main" revision="cipher" clone-depth="1" />
+        <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="main" revision="twelve" clone-depth="1" />
+	
+	<!-- Brightness Patch -->
+	<remove-project name="android_frameworks_base" />
         <project path="frameworks/base" name="android_frameworks_base-1" remote="main" revision="twelve" clone-depth="1" />
+
+        <!-- IMS repo -->
+        <project path="vendor/realme/RMX1941-ims" name="android_vendor_realme_RMX1941-ims" remote="main" revision="twelve" clone-depth="1" />
+
+        <!-- Kernel tree -->
+
+        <remote name="kernel"
+                fetch="https://github.com/P-Salik" />
+
+        <project path="kernel/realme/RMX1941" name="android_kernel_realme_karashi" remote="kernel" revision="android-10.0" clone-depth="1" />
+
+        <!-- Parts -->
+        <remote name="parts"
+                fetch="https://github.com/Realme-G70-Series" />
+
+	<project path="packages/apps/RealmeParts" name="android_packages_apps_RealmeParts" remote="parts" revision="aosp12" clone-depth="1" />
+
+        <!-- SEPolicy -->
+
+        <remote name="sepolicy"
+                fetch="https://github.com/ArrowOS" />
+
+	<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="sepolicy" revision="arrow-12.0" clone-depth="1" />
 
 </manifest>
